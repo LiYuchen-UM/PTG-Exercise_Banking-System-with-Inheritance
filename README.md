@@ -1,2 +1,17 @@
 # PTG-Exercise_Banking-System-with-Inheritance
-银行业一样一样有有有也会有
+
+## Concepts:
+
+- Inheritance
+- Overriding
+- Encapsulation
+
+## Description:
+
+- Base class: Account
+- Subclasses: SavingsAccount, CurrentAccount
+- Each subclass overrides calculateInterest() and withdraw() rules.
+
+## Challenge:
+
+Implement validation logic and monthly interest computation.
