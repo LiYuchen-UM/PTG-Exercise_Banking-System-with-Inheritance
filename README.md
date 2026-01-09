@@ -1,4 +1,18 @@
-# PTG-Exercise_Banking-System-with-Inheritance
+# Banking System with Inheritance
+
+## Features
+
+- A simple banking system implemented using Java inheritance.
+- Core classes:
+  - `Account` (abstract base class): defines common account attributes and operations.
+  - `SavingsAccount`: represents a savings account with minimum balance and monthly interest calculation.
+  - `CurrentAccount`: represents a current account that allows overdraft without transaction fees.
+- Supported operations:
+  - Deposit
+  - Withdraw
+  - Monthly interest calculation
+  - Overdraft (Current Account)
+  - Display account information
 
 ## Concepts:
 
