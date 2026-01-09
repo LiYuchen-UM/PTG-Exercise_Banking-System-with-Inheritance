@@ -7,8 +7,8 @@ Demo Video: [https://youtu.be/FOjBIkmgF-8](https://youtu.be/FOjBIkmgF-8 "https:/
 - A simple banking system implemented using Java inheritance.
 - Core classes:
   - `Account` (abstract base class): defines common account attributes and operations.
-  - `SavingsAccount`: represents a savings account with minimum balance and monthly interest calculation.
-  - `CurrentAccount`: represents a current account that allows overdraft without transaction fees.
+  - `SavingsAccount`: represents a savings account with monthly interest calculation.
+  - `CurrentAccount`: represents a current account that allows overdraft.
 - Supported operations:
   - Deposit
   - Withdraw
