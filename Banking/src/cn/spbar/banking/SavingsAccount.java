@@ -1,7 +1,7 @@
 package cn.spbar.banking;
 
 public class SavingsAccount extends Account {    
-    public SavingsAccount(int number, double initialBalance, double annualInterestRate) {
+    public SavingsAccount(long number, double initialBalance, double annualInterestRate) {
         super(number, initialBalance, annualInterestRate);
     }
 

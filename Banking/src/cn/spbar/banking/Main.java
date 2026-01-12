@@ -8,7 +8,7 @@ public class Main {
         boolean exit = false;
 
         while (exit == false) { 
-            System.out.println("\nSelamat datang ЯHB Bank!");
+            System.out.println("\nSelamat datang XXX Bank!");
             System.out.println("Select your account type:");
             System.out.println("1. Savings Account");
             System.out.println("2. Current Account");
@@ -25,8 +25,9 @@ public class Main {
     }
 
     static void savings() {
+        
         System.out.print("Enter Account No.:\t");
-        int number = sc.nextInt();
+        long number = sc.nextInt();
         System.out.print("Enter Initial Bal:\tRM ");
         double initialBalance = sc.nextDouble();
         System.out.print("Enter Annual IR:\t");
@@ -54,7 +55,12 @@ public class Main {
                     double amount = sc.nextDouble();
                     savingsAccount.withdraw(amount);
                 }
-                case 3 -> savingsAccount.info();
+                case 3 -> {
+                    savingsAccount.info();
+                    System.out.print("\nPress Enter to continue...\n> ");
+                    sc.nextLine();
+                    sc.nextLine();
+                }
                 case 4 -> System.out.printf("Monthly Interest:\tRM %.2f\n", savingsAccount.calculateInterest());
                 case 5 -> exit = true;
                 default -> System.out.println("Invaild input!");
@@ -63,6 +69,7 @@ public class Main {
     }
 
     static void current() {
+
         System.out.print("Enter Account No.:\t");
         int number = sc.nextInt();
         System.out.print("Enter Initial Bal:\tRM ");
@@ -100,7 +107,12 @@ public class Main {
                     double odLimit = sc.nextDouble();
                     currentAccount.setOverdraftLimit(odLimit);
                 }
-                case 4 -> currentAccount.info();
+                case 4 -> {
+                    currentAccount.info();
+                    System.out.print("\nPress Enter to continue...\n> ");
+                    sc.nextLine();
+                    sc.nextLine();
+                }
                 case 5 -> System.out.printf("Monthly Interest:\tRM %.2f\n", currentAccount.calculateInterest());
                 case 6 -> exit = true;
                 default -> System.out.println("Invaild input!");

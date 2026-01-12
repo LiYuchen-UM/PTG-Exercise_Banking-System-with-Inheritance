@@ -1,12 +1,12 @@
 package cn.spbar.banking;
 
 public abstract class Account {
-    protected int number;
+    protected long accountNumber;
     protected double balance;
     protected double annualInterestRate;
 
-    public Account(int number, double initialBalance, double annualInterestRate) {
-        this.number = number;
+    public Account(long number, double initialBalance, double annualInterestRate) {
+        this.accountNumber = number;
         this.balance = initialBalance;
         this.annualInterestRate = annualInterestRate;
     }
@@ -25,7 +25,7 @@ public abstract class Account {
 
     public void info() {
         System.out.println("=== Account Info ===");
-        System.out.println("Account No:\t" + number);
+        System.out.println("Account No:\t" + accountNumber);
         System.out.printf("Balance:\tRM %.2f\n", balance);
         System.out.println("Annual IR:\t" + annualInterestRate * 100 + "%");
     }

@@ -3,7 +3,7 @@ package cn.spbar.banking;
 public class CurrentAccount extends Account {
     private double overdraftLimit;
 
-    public CurrentAccount(int number, double initialBalance, double annualInterestRate, double overdraftLimit) {
+    public CurrentAccount(long number, double initialBalance, double annualInterestRate, double overdraftLimit) {
         super(number, initialBalance, annualInterestRate);
         this.overdraftLimit = overdraftLimit;
     }
